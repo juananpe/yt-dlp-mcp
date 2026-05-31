@@ -77,13 +77,14 @@ Alternatively, create a `.vscode/mcp.json` file in your workspace:
 
 Download a YouTube video from a given URL.
 
-| Parameter | Type | Default | Description |
-|-----------|------|---------|-------------|
-| `url` | string | *(required)* | The YouTube video URL to download |
-| `output_template` | string | `%(title)s.%(ext)s` | Output filename template |
-| `format` | string | `best` | Video quality/format. Use `bestaudio/best` for audio only |
+| Parameter         | Type   | Default             | Description                                               |
+| ----------------- | ------ | ------------------- | --------------------------------------------------------- |
+| `url`             | string | _(required)_        | The YouTube video URL to download                         |
+| `output_template` | string | `%(title)s.%(ext)s` | Output filename template                                  |
+| `format`          | string | `best`              | Video quality/format. Use `bestaudio/best` for audio only |
 
 **Example usage in chat:**
+
 ```
 Download the video at https://www.youtube.com/watch?v=... in best quality.
 Download the audio from https://www.youtube.com/watch?v=... as MP3.
@@ -102,12 +103,12 @@ python download.py
 
 Common `format` values:
 
-| Value | Description |
-|-------|-------------|
-| `best` | Best available video+audio |
-| `bestvideo+bestaudio` | Best video and best audio separately |
-| `bestaudio/best` | Audio only (falls back to best if no audio-only) |
-| `worst` | Worst quality (smallest file size) |
-| `mp4` | MP4 format only |
+| Value                 | Description                                      |
+| --------------------- | ------------------------------------------------ |
+| `best`                | Best available video+audio                       |
+| `bestvideo+bestaudio` | Best video and best audio separately             |
+| `bestaudio/best`      | Audio only (falls back to best if no audio-only) |
+| `worst`               | Worst quality (smallest file size)               |
+| `mp4`                 | MP4 format only                                  |
 
 See the [yt-dlp format documentation](https://github.com/yt-dlp/yt-dlp?tab=readme-ov-file#format-selection) for more options.
