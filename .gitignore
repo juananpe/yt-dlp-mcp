@@ -1,0 +1,35 @@
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+dist/
+build/
+.eggs/
+*.whl
+
+# Virtual environments
+.venv/
+venv/
+env/
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# OS
+.DS_Store
+Thumbs.db
+
+# yt-dlp downloaded files
+*.mp4
+*.webm
+*.mkv
+*.mp3
+*.m4a
+*.flv
+*.avi
+*.mov
+*.wmv
+*.ogg
